@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Jimin's Travel Diaries</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 50px;
+            position: relative;
+        }
+
+        header .logo {
+            font-size: 1rem;
+            font-style: italic;
+            position: absolute;
+            left: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 60px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            text-decoration: underline;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 50px;
+            cursor: pointer;
+        }
+
+        .search-icon img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #333;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .gallery-section {
+            padding: 20px 20px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery-title h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery-title p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .gallery-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-content img {
+            width: 45%;
+            height: 800px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery-content .text-content {
+            flex: 1;
+        }
+
+        .gallery-content .text-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .gallery-content .text-content p {
+            font-size: 1.2rem;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        .gallery-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .gallery-table th,
+        .gallery-table td {
+            padding: 15px;
+            border: 1px solid white;
+        }
+
+        .gallery-table th {
+            background-color: #444;
+        }
+
+        .gallery-table td {
+            background-color: #222;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: black;
+            font-size: 0.9rem;
+        }
+
+        footer img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        footer p {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Jimin's Travel Diaries</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="#" class="active">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-icon">
+            <a href="#">
+                <img src="icons8-search-50.png" alt="Search Icon">
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Gallery of Memories</h1>
+        <p>Explore my favorite moments from Seoul, Singapore, Vancouver, and beyond.</p>
+        <p>Scroll Down to Explore</p>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-title">
+            <h2>"Seoul: Where It All Began"</h2>
+            <p>From the vibrant streets of Myeongdong to the tranquil beauty of Hanok villages, Seoul is a city of contrasts.</p>
+        </div>
+
+        <div class="gallery-content">
+            <img src="N Seoul Tower, South Korea.jpeg" alt="N Seoul Tower">
+            <img src="Hanbok Rental_ How to Rent for a Day in Seoul, South Korea.jpeg" alt="Hanbok in Gyeongbokgung Palace">
+        </div>
+
+        <table class="gallery-table">
+            <tr>
+                <th>Aspect</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Landmark</td>
+                <td>Namsan Tower (N Seoul Tower) – Offering panoramic views of Seoul.</td>
+            </tr>
+            <tr>
+                <td>Culture &amp; History</td>
+                <td>Bukchon Hanok Village and Gyeongbokgung Palace – Reflecting Seoul's rich cultural and historical heritage.</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>Kimchi, Bibimbap, Tteokbokki – Iconic dishes showcasing Korean flavors.</td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>Wearing a hanbok while exploring historic sites.</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/l5llo4/" target="_blank">
+            <img src="instagram.png" alt="Instagram Icon">
+        </a>
+        <p>© 2024 Jimin's Travel Diaries</p>
+    </footer>
+</body>
+</html>
